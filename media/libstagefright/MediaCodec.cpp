@@ -3018,7 +3018,7 @@ status_t MediaCodec::configure(
     }
 
     sp<AMessage> msg = new AMessage(kWhatConfigure, this);
-    // TB520FU video motion smoothing (VideoMotion app): sys.lenovo.memc.<uid>
+    // Lenovo video motion smoothing (VideoMotion app): sys.lenovo.memc.<uid>
     // is set for the codec client UIDs the user selected; missing means off.
     // Qualcomm VPP takes FRC only at configure time. Protected, tunneled and
     // HDR (PQ/HLG) playback is left alone.
